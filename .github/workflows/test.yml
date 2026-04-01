@@ -24,3 +24,8 @@ jobs:
     - name: Run Selenium Test
       run: |
         python SauceDemo.py
+        
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v2
+      env:
+        SONAR_TOKEN: ${{ e8842d56ed4f0128770b4e09e841dc9ba7bc9250 }}
